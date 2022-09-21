@@ -1,12 +1,14 @@
 export function NavBar() {
   return (
-    <nav>
-      <span>Logo</span>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <header>
+      <nav className="nav">
+        <span className="logo">Logo</span>
+        <ul className="navlist">
+          <li className="navlink">Home</li>
+          <li className="navlink">About</li>
+          <li className="navlink">Contact</li>
+        </ul>
+      </nav>
+    </header>
   );
 }
