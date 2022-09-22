@@ -1,17 +1,14 @@
-function Main() {
-  const stock = 35;
-    function count(){
-        return stock
-    }
+import { ItemCart } from "./ItemCart";
+
+export function Main() {
+  const onAdd = (quantity) => {
+    console.log("Compraste " + quantity + " unidades");
+  };
 
   return (
-    <section className="counter">
-      <div className="buttons">
-        <button className="btnAdd">+</button>
-            <span className="count"> {count()} </span>
-        <button className="btnRes">-</button>
-      </div>
-    </section>
+    <>
+      <ItemCart initial={0} stock={10} onAdd={onAdd} />
+    </>
   );
 }
 
